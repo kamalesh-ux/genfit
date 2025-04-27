@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Genfit</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f4f4f4;
+    }
+    header {
+      background: black;
+      color: #fff;
+      padding: 20px ;  
+      text-align: center;
+    }
+    header h1{
+      display: flex;
+      text-align: center;
+
+    }
+    nav ul {
+      display: flex;
+      list-style: none;
+      padding: 0;
+    }
+    nav ul li {
+      margin: 0 15px;
+    }
+    nav ul li a {
+      color: white;
+      text-decoration: none;
+    }
+    .container {
+      width: 80%;
+      margin: auto;
+      overflow: hidden;
+    }
+
+    
+    .section {
+      padding: 20px;
+      background: white;
+      margin: 20px 0;
+      border-radius: 10px;
+    }
+    .outfit-cards {
+      display: flex;
+      justify-content: space-around;
+      flex-wrap: wrap;
+    }
+    .outfit-card {
+      background: #ddd;
+      padding: 15px;
+      border-radius: 10px;
+      text-align: center;
+      width: 30%;
+    }
+    .outfit-card img {
+      width: 100%;
+      height: auto;
+      border-radius: 5px;
+    }
+  .outfit-card button{
+    color: black;
+    background-color: white;
+  }
+    .color-guide li {
+      display: inline;
+      align-items: center;
+      margin: 5px 0;
+      padding-left: 145px;
+      text-align: center;
+    }
+    .color-box {
+      width: 20px;
+      height: 20px;
+      margin-right: 10px;
+      display: inline-block;
+    }
+    form input, form textarea, form button {
+      display: block;
+      width: 100%;
+      margin: 10px 0;
+      padding: 10px;
+      
+    }
+    footer {
+      text-align: center;
+      padding: 10px;
+      background: #333;
+      color: white;
+      margin-top: 20px;
+    }
+    form button{
+      color: white;
+      background-color: black;
+      cursor: pointer;
+    }
+    form button:hover
+    {
+      background-color: blue;
+    }
+    .outfit-card  a{
+      color: blue;
+      text-decoration: none;
+
+      
+    }
+    
+    
+  </style>
+</head>
+<body>
+  <header>
+    <div class="container">
+      <h1>Genfit</h1>
+      <nav>
+        <ul>
+          <li><a href="about.html">About</a></li>
+          <li><a href="#outfits">Outfits</a></li>
+          <li><a href="#color-guide">Color Guide</a></li>
+          <li><a href="mailto:your-kingkam0947h@gmail.com" class="email-button">Contact Me</a></li>
+          <li><a href="login.html">Login</a></li>
+          <li><a href="https://wa.me/6369167069">Whatsapp</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+
+  <section id="about" class="section">
+    <div class="container">
+      <h2>About Our Styling Service</h2>
+      <p>Welcome to the ultimate men's styling guide. Our mission is to help men find their perfect outfits with complementary colors and combinations for every occasion.</p>
+    </div>
+  </section>
+
+  <section id="outfits" class="section">
+    <div class="container">
+      <h2>Outfit Suggestions</h2>
+      <div class="outfit-cards">
+        <div class="outfit-card">
+          <img src="formal.jpeg" alt="Formal Outfit">
+          <h3>Formal Wear</h3>
+          <p>Explore elegant combinations for weddings, galas, or business events.</p>
+         <a href="">Show more</a>
+        </div>
+        <div class="outfit-card">
+          <img src="casual.jpg" alt="Casual Outfit">
+          <h3>Casual Style</h3>
+          <p>Discover smart casual outfits perfect for everyday wear or outings.</p>
+          <a href="">Show more</a>
+        </div>
+        <div class="outfit-card">
+          <img src="marriage.jpg" alt="Marriage outfit">
+          <h3>Marriage Look</h3>
+          <p>Get tips on looking fashionable while staying active with marriage outfits.</p>
+          <a href="">Show more</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="color-guide" class="section">
+    <div class="container">
+      <h2>Color Combinations</h2>
+      <ul class="color-guide">
+        <li><span class="color-box" style="background-color: #2e8b57;"></span> Green & Red</li>
+        <li><span class="color-box" style="background-color: #4682b4;"></span> Blue & Orange</li>
+        <li><span class="color-box" style="background-color: #f4a300;"></span> Yellow & Purple</li>
+        <li><span class="color-box" style="background-color: #c71585;"></span> Pink & Green</li>
+      </ul>
+    </div>
+  </section>
+
+  <section id="contact" class="section">
+    <div class="container">
+      <h2>Contact Us</h2>
+      <form action="#">
+        <input type="text" placeholder="Your Name" required>
+        <input type="email" placeholder="Your Email" required>
+        <textarea placeholder="Message" rows="4" required></textarea>
+        <button type="submit">Send Message</button>
+      </form>
+    </div>
+  </section>
+
+  <footer>
+    <div class="container">
+      <p>&copy; 2025 Men's Styling Service. All rights reserved.</p>
+    </div>
+  </footer>
+</body>
+</html>
